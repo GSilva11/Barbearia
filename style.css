@@ -301,7 +301,7 @@ td, th {
 /* MOBILE */
 @media screen and (max-width: 500px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produto-descricao, .produto-preco {
-		width: auto;
+		width: 100%;
 	}
 
     .caixa li{
@@ -317,7 +317,6 @@ td, th {
     }
 
     .itens {
-        margin-left: -130px;
         text-align: center;
     }
 
@@ -325,16 +324,20 @@ td, th {
         margin-bottom: 15px;
     }
 
+    .produtos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
     .produtos li{
         padding: 20px;
         margin-bottom: 30px;
         display: block;
-        margin-right: 650px;
     }
 
-    .produtos {
-        margin-left: 65px;
-    }
     .produto-descricao, .produto-preco{
         padding: 0 30px;
         margin: auto;
@@ -372,7 +375,7 @@ td, th {
 	}
 }
 
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 1600px){
     .produtos {
         margin: auto;
         display: flex;
