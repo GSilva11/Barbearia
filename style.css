@@ -301,7 +301,7 @@ td, th {
 /* MOBILE */
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produto-descricao, .produto-preco {
-		width: 100%;
+		width: 99%;
 	}
 
     .conteudo-beneficios {
