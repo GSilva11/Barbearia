@@ -301,7 +301,7 @@ td, th {
 /* MOBILE */
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .produto-descricao, .produto-preco {
-		width: 99%;
+		width: 100%;
 	}
 
     .conteudo-beneficios {
@@ -323,35 +323,40 @@ td, th {
     }
 
     .produtos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        text-align: center;
         width: 100%;
     }
 
     .produtos li{
-        padding: 20px;
+        padding: 0px;
         margin-bottom: 30px;
         display: block;
     }
+    .produtos img, h2 {
+        width: 100%;
+    }
 
     .produto-descricao, .produto-preco{
-        padding: 0 30px;
+        padding: 10px;
         margin: auto;
     }
 
     form {
-        width: auto;
-        margin: 0;
-        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 30px;
         margin-top: 30px;
+    }
+
+    .input-padrao{
+        width: 70%;
     }
 
     .enviar {
         width: auto;
         padding: 15px;
-        margin-left: 85px;
     }
 
     table {
