@@ -178,7 +178,7 @@ strong {
     justify-content: center;
 }
 
-.contato-titulo {
+#contato-titulo {
     font-size: 1.6rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -237,7 +237,7 @@ form {
     flex-direction: column;    
     margin: auto;
     justify-content: center;
-    align-items:
+    align-items: center;
 }
 
 form label, form legend {
@@ -340,13 +340,27 @@ form label, form legend {
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
-    .caixa, #principal, .conteudo-beneficios, .mapa-conteudo, .produtos, .produto-descricao, .produto-preco {
+    #navbar-items, #principal, .conteudo-beneficios, .mapa-conteudo, .produtos, .produto-descricao, .produto-preco {
 		width: 90%;
 	}
 
-    #showcase-container h2,p{
+    #navbar {
+        height: 150px;
+    }
+    #navbar-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    #showcase-container h2, p{
         width: 80%;
         margin: auto;
+    }
+
+    #showcase-container{
+        margin-top: 100px;
     }
 
     .conteudo-beneficios {
@@ -391,14 +405,13 @@ form label, form legend {
         display: block;
     }
 
-    .contato-titulo {
-        border-top: #222 solid 1px;
+    #contato-titulo{
         margin-top: 15px;
-        padding: 0px;
+        padding-top: 15px;
     }
 
     .info{
-        margin: auto;
+       margin-top: 0;
     }
 
     .produto-descricao, .produto-preco{
