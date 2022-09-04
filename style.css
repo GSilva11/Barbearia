@@ -294,6 +294,10 @@ form label, form legend {
         height: 150px;
     }
 
+    .headline, #contato-titulo{
+        font-size: 1.6rem;
+    }
+
     #navbar-items{
         display: flex;
         flex-direction: column;
