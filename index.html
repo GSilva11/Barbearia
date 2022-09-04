@@ -13,46 +13,40 @@
 </head>
 <body>
 
-    <header>
-        <div class="caixa">
-            <h1><img src="imagens/logo.png" alt="logo"></h1>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo">BarberShop</h1>
+            <ul id="navbar-items">
+                <li><a href="#showcase">Inicio</a></li>
+                <li><a href="#principal">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+    <header id="showcase">
+        <div id="showcase-container">
+            <h2>O homem moderno</h2>
+            <p>também cuida da sua aparência e a nossa barbearia é o melhor lugar para fazer isso!</p>
+            <a href="" class="btn">Saiba mais</a>
         </div>
     </header>
-        
-        <img class="banner" src="banner/banner.jpg" alt="banner">
-    
+            
     <main>
-        <section class="principal">
-            <h2 class="titulo-principal">Sobre a Barbearia</h2>
+        <section id="principal">
+            <p class="welcome">Bem vindo ao</p>
+            <h3 class="headline">Sobre a barbearia</h3>
 
-            <img class="utensilios" src="utensilios/utensilios.jpg" alt="utensilios">
-            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong>  traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p> 
-            
-            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".
-            </strong></em></p>
-            
+            <p>Aqui é barba, cabelo e bigode! Venha dar aquele tapa no visual e tomar aquela cervejinha gelada conversando com os amigos.</p> 
+            <p id="missao">Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".
+            </strong></p>
+            <p>Quem quer ser bem atendido e voltar para casa mais bonito sabe que a barbearia <strong>BarberShop</strong> é o melhor lugar!</p>
             <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p> 
         </section>
         
-        <section class="mapa">
-            <h3 class="titulo-principal">Nosso estabelecimento</h3>
-            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
-
-            <div class="mapa-conteudo">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-        </section>
 
         <section class="beneficios">
-            <h3 class="titulo-principal">Benefícios</h3>
+            <h3 class="headline">beneficios</h3>
 
             <div class="conteudo-beneficios">
                 <ul class="lista-beneficios">
@@ -62,18 +56,88 @@
                     <li class="itens">Profissionais qualificados</li>
                     <li class="itens">Pontualidade</li>
                     <li class="itens">Limpeza</li>
-                </ul><img class="imagem-beneficios" src="beneficios/beneficios.jpg" alt="beneficios">
+                </ul>
+                <img class="imagem-beneficios" src="beneficios/beneficios.jpg" alt="beneficios">
+            </div>
 
-            </div>
-            <div class="video">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
         </section>
     </main>
 
-    <footer>
-        <img src="imagens/logo-branco.png" alt="">
-        <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+    <section id="contato">
+        <div>
+            <p class="contato-titulo">Fale com a gente</p> 
+            <p class="info">Tel: (XX) XXXX-XXXX</p>
+            <p>Email: info@meusite.com</p>
+        </div>
+        <div>
+            <p class="contato-titulo">Nosso endereço</p> 
+            <p class="info">Av. Bernardino de Campos 98</p>
+            <P>São Paulo - SP</P>
+        </div>
+        <div>
+           <p class="contato-titulo"> Horário de atendimento</p>
+           <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+    </section>
+
+    <section id="mapa">
+        <h3 class="headline">Nosso estabelecimento</h3>
+        <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+
+        <div class="mapa-conteudo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h3 class="headline">Contato</h3>
+
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="input-padrao" required placeholder="Nome">
+
+            <label for="sobrenome">Sobrenome </label>
+            <input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
+
+            <label for="email">Email </label>
+            <input type="email" id="email" class="input-padrao" required placeholder="Email@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required ></textarea>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright 2022 - Todos os direitos reservados.</p>
+        <p>Feito por Gabriel Silva</p>
     </footer>
 
 </body>
