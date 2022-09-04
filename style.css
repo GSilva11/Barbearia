@@ -198,7 +198,7 @@ table {
 }
 
 thead {
-    background: #555555;
+    background: #222;
     color: #ffffff;
     font-weight: bold;
 }
@@ -288,7 +288,8 @@ form label, form legend {
 /* MOBILE */
 @media screen and (max-width: 768px) {
     #navbar-items, #principal, .conteudo-beneficios, .mapa-conteudo, .produtos, .produto-descricao, .produto-preco {
-		width: 90%;
+		width: 100%;
+        padding: 0 15px;
 	}
 
     #navbar {
