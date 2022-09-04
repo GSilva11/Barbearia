@@ -103,7 +103,6 @@ nav a {
     text-align: center;
     padding: 20px 0;
     letter-spacing: 2px;
-    margin-top: 5px;
 }
 
 /* Principal */
@@ -208,13 +207,7 @@ td, th {
     padding: 8px 40px;
 }
 
-
 /* Mapa */
-#mapa p {
-    margin: 0 0 2em;
-    text-align: center;
-}
-
 #mapa {
 	padding: 2rem 0;
     background: #222;
@@ -225,6 +218,11 @@ td, th {
 	width: 940px;
 	margin: 0 auto;
     background-color: #222;
+}
+
+.paragrafo {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 /* Formulario */
@@ -295,11 +293,17 @@ form label, form legend {
     #navbar {
         height: 150px;
     }
+
     #navbar-items{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding: 0;
+    }
+
+    .paragrafo {
+        margin: 15px auto;
+        text-align: center;
     }
 
     #showcase-container h2, p{
@@ -354,8 +358,6 @@ form label, form legend {
     }
 
     #contato-titulo{
-        margin-top: 15px;
-        padding-top: 15px;
     }
 
     .info{
@@ -397,4 +399,46 @@ form label, form legend {
 	nav {
 		position: static;
 	}
+}
+
+@media screen and (max-width: 383px){
+    #principal, .conteudo-beneficios, .mapa-conteudo, .produtos, .produto-descricao, .produto-preco {
+		width: auto;
+        padding: 0 15px;
+	}
+
+    .logo, #contato-titulo, .headline {
+        font-size: 1.2rem;
+    }
+
+    #navbar-items a{
+        display: block;
+        font-size: 1rem;
+    }
+
+    .headline {
+        margin: 0 auto;
+    }
+
+    .enviar{
+        padding: 15px 25px;
+        width: auto;
+    }
+
+    #mapa {
+        padding: 0;
+    }
+
+    #navbar{
+        width: 100%;
+    }
+
+    .paragrafo, #footer{
+        font-size: 0.8rem;
+    }
+
+    td, th {    
+        display: flex;
+        flex-direction: column;        
+    }
 }
