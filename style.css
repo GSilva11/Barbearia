@@ -379,7 +379,7 @@ form label, form legend {
 
     /*Produtos*/
     .imgp {
-        height: 200px;
+        height: 150px;
     }
 
     #cortes ul {
@@ -501,6 +501,10 @@ form label, form legend {
 
     #navbar{
         width: 100%;
+    }
+
+    .imgp {
+        height: 150px;
     }
 
     .paragrafo, #footer{
