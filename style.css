@@ -114,7 +114,8 @@ nav a {
 
 #principal {
     padding: 3em 0;
-	width: 940px;
+	max-width: 940px;
+    width: 100%;
 	margin: 0 auto;
     text-align: center;
 }
@@ -250,7 +251,8 @@ td, th {
 }
 
 .mapa-conteudo {
-	width: 940px;
+	max-width: 940px;
+    width: 100%;
 	margin: 0 auto;
     background-color: #222;
 }
@@ -516,8 +518,7 @@ form label, form legend {
         font-size: 0.8rem;
     }
 
-    td, th {    
-        display: flex;
-        flex-direction: column;        
+    td {    
+       padding: 15px 35px;       
     }
 }
