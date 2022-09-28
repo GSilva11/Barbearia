@@ -18,5 +18,7 @@
 
 <h2> Mobile </h2>
 <img src="https://user-images.githubusercontent.com/69200574/192764140-73d33390-ff59-4564-a14d-8a1a3134639b.png"/>
+<img src="https://user-images.githubusercontent.com/69200574/192768224-2d8522c4-ed86-4088-b1ec-79073425fcb5.png"/>
+
 
 
