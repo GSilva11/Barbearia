@@ -6,11 +6,10 @@
 
 <p align="center">
  <a>Objetivo</a> •
- <a>Roadmap</a> • 
- <a>Tecnologias</a> • 
- <a>Contribuição</a> • 
- <a>Licença</a> • 
- <a>Autor</a>
+ <a>Beneficios</a> • 
+ <a>Serviços</a> • 
+ <a>Estabelecimento</a> • 
+ <a>Contato</a> • 
 </p>
 
 <img src="https://user-images.githubusercontent.com/69200574/192762783-9e2e2143-3f08-4870-ad3a-2baaef61be87.PNG"/>
