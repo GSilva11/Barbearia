@@ -5,12 +5,12 @@
 </h4>
 
 <p align="center">
- <p>Objetivo</p> •
- <p>Roadmap</p> • 
- <p>Tecnologias</p> • 
- <p>Contribuição</p> • 
- <p>Licença</p> • 
- <p>Autor</p>
+ <a>Objetivo</a> •
+ <a>Roadmap</a> • 
+ <a>Tecnologias</a> • 
+ <a>Contribuição</a> • 
+ <a>Licença</a> • 
+ <a>Autor</a>
 </p>
 
 <img src="https://user-images.githubusercontent.com/69200574/192762783-9e2e2143-3f08-4870-ad3a-2baaef61be87.PNG"/>
