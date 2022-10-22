@@ -137,7 +137,8 @@ strong {
 .beneficios {
     display: flex;
     flex-direction: column;
-    background: #222;
+    /* background: #222; */
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     color: #eee;
 }
 
@@ -261,6 +262,11 @@ a{
 
 .paragrafo p{
     text-align: center;
+}
+
+.paragrafo-sobre{
+    text-align: justify;
+    margin: 1rem 0;
 }
 
 /* Horario */
