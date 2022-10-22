@@ -34,8 +34,8 @@
             
     <main>
         <section id="principal">
-            <p class="welcome">Bem vindo ao</p>
-            <h3 class="headline">Sobre a barbearia</h3>
+            <p class="welcome">Bem vindos a</p>
+            <h3 class="headline">BarberShop</h3>
 
             <div class="paragrafo">
                 <p>Aqui é barba, cabelo e bigode! Venha dar aquele tapa no visual e tomar aquela cervejinha gelada conversando com os amigos.</p> 
@@ -52,47 +52,52 @@
 
             <div class="conteudo-beneficios">
                 <ul class="lista-beneficios">
-                    <li class="itens">Atendimento aos clientes</li>
+                    <li class="itens">Atendimento aos clientes com horario agendado</li>
                     <li class="itens">Espaço diferenciado</li>
-                    <li class="itens">Localização</li>
                     <li class="itens">Profissionais qualificados</li>
-                    <li class="itens">Pontualidade</li>
-                    <li class="itens">Limpeza</li>
+                    <li class="itens">Cortes de cabelo moderno e personalizado</li>
+                    <li class="itens">Conselhos profissionais</li>
+                    <li class="itens">Produtos de qualidade</li>
                 </ul>
                 <img class="imagem-beneficios" src="beneficios/beneficios.jpg" alt="beneficios">
             </div>
 
         </section>
 
-        <section id="cortes">
-            <h3 class="headline">Nossos Serviços</h3>
-            <ul>
-                <li class="produtos">
-                    <img class="imgp" src="imagens/cabelo-removebg-preview.png" alt="">
-                    <p class="desc">Cabelo</p>
-                    <p class="preco">R$ 30,00</p>
+        <section id="projects">
+            <h2 class="headline">Nossos Serviços</h2>
+            <div class="cards">
+                <section class="card-project">
+                    <img class="card-project-img" src="imagens/cabelo-removebg-preview.png" alt="">
+                    <h4>Cabelo</h4>
                     <p>Na tesoura ou máquina, como o cliente preferir.</p>
-                </li>
-                <li class="produtos">
-                    <img class="imgp" src="imagens/barba-removebg-preview.png" alt="">
-                    <P class="desc">Barba</P>
-                    <p class="preco">R$ 25,00</p>
-                    <p>Corte e desenho profissional de barba.</p>
-                </li>
-                <li class="produtos">
-                    <img class="imgp" src="imagens/cabelo+barba-removebg-preview.png" alt="">
-                    <p class="desc">Cabelo + Barba</p>
                     <p class="preco">R$ 50,00</p>
-                    <p>Pacote completo de cabelo e barba</p>
-                </li>
-                <li class="produtos">
-                    <img class="imgp" src="imagens/cabelo-removebg-preview.png" alt="">
-                    <p class="desc">Cabelo Kids (Até 12 anos)</p>
+                    <a href=""><button class="btn-project">Agendar</button></a>
+                </section>
+                <section class="card-project">
+                    <img class="card-project-img" src="imagens/barba-removebg-preview.png" alt="">
+                    <h4>Barba</h4>
+                    <p>Corte e desenho profissional de barba.</p>
                     <p class="preco">R$ 25,00</p>
+                    <a href=""><button class="btn-project">Agendar</button></a>
+                </section>
+                <section class="card-project">
+                    <img class="card-project-img" src="imagens/cabelo+barba-removebg-preview.png" alt="">
+                    <h4>Cabelo + Barba</h4>
+                    <p>Pacote completo de cabelo e barba.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <a href=""><button class="btn-project">Agendar</button></a>
+                </section>
+                <section class="card-project">
+                    <img class="card-project-img" src="imagens/cabelo-removebg-preview.png" alt="" >
+                    <h4>Cabelo Kids (Até 12 anos)</h4>
                     <p>Na tesoura ou máquina, como o cliente preferir.</p>
-                </li>
-            </ul>
+                    <p class="preco">R$ 25,00</p>
+                    <a href=""><button class="btn-project">Agendar</button></a>
+                </section>
+            </div>
         </section>
+
     </main>
 
     <section id="contato">
@@ -139,38 +144,39 @@
 
     </section>
 
-    <section id="mapa">
-        <h3 class="headline">Nosso estabelecimento</h3>
-        <div class="paragrafo">
-            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
-        </div>
-      
-        <div class="mapa-conteudo">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-    </section>
+    <section id="estabelecimento">
+        <section class="formulario">
+            <h3 class="headline">Entre em contato</h3>
+                <form action="">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="input-padrao" required placeholder="Nome">
+        
+                    <label for="sobrenome">Sobrenome </label>
+                    <input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
+        
+                    <label for="email">Email </label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="Email@dominio.com">
+        
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required ></textarea>
+        
+                    <input type="submit" value="Enviar formulário" class="enviar">
+                </form>
+        </section>
 
-    <section class="formulario">
-        <h3 class="headline">Contato</h3>
-
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" class="input-padrao" required placeholder="Nome">
-
-            <label for="sobrenome">Sobrenome </label>
-            <input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
-
-            <label for="email">Email </label>
-            <input type="email" id="email" class="input-padrao" required placeholder="Email@dominio.com">
-
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+        <section id="mapa">
             
-            <label for="mensagem">Mensagem</label>
-            <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required ></textarea>
+            <h3 class="headline">Nosso estabelecimento está localizado no coração da cidade.</h3>
 
-            <input type="submit" value="Enviar formulário" class="enviar">
-        </form>
+            <div class="mapa-conteudo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+
+        </section>
+
     </section>
 
     <footer id="footer">

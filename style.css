@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2rem; 
 }
 
 #navbar-items {
@@ -98,7 +98,7 @@ nav a {
 }
 
 .headline {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
     padding: 20px 0;
@@ -166,39 +166,71 @@ strong {
     border-radius: 5px;
 }
 /*Serviços*/
-
-.imgp {
-    margin: 0 auto;
+.cards{
     display: flex;
-    height: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
-#cortes ul{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+.card-project{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    max-width: 350px;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.card-project h4 {
     text-align: center;
-    padding-bottom: 35px;
-    list-style-type:none;
+    margin: 1rem 0;
 }
 
-.produtos{
-    border: #222 1px solid;
-    border-radius: 10px;
-    margin: 0 30px;
-    padding: 10px;
+.btn-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: .6rem 2rem;
+    border-radius: 15px;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: #e5e5e5;
+    width: 50%;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 1s; 
 }
 
-.desc {
-    font-weight: bold;
-    text-align: center;
-    margin: 5px 0;
+a{
+    text-decoration: none;
 }
 
 .preco {
     font-weight: bold;
     color: #ed820e;
-    margin-bottom: 10px;
+    margin-top: 1rem;
     text-align: center;
+}
+
+.btn-project:hover{
+    background: #ff5858;
+}
+
+.card-project-img{
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 1rem auto;
 }
 
 /* Contato */
@@ -227,6 +259,10 @@ strong {
     padding: 10px;
 }
 
+.paragrafo p{
+    text-align: center;
+}
+
 /* Horario */
 table {
     margin: 20px auto;
@@ -243,50 +279,40 @@ td, th {
     padding: 8px 40px;
 }
 
-/* Mapa */
-#mapa {
-	padding: 2rem 0;
+/* Formulario */
+#estabelecimento {
+    display: flex;
+    width: 100%;
+    background: #222;
+}
+
+.formulario {
     background: #222;
     color: #eee;
-}
-
-.mapa-conteudo {
-	max-width: 940px;
-    width: 100%;
-	margin: 0 auto;
-    background-color: #222;
-}
-
-.paragrafo {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-/* Formulario */
-.formulario {
-    background: #eee;
+    width: 50%;
 }
 
 form {
     display: flex;
     flex-direction: column;    
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 4rem;
     justify-content: center;
     align-items: center;
 }
 
 form label, form legend {
     display: block;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .input-padrao {
     border: none;
     border-bottom: 2px solid #ed820e;
     display: block;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 30%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 60%;
     background: transparent;
 }
 
@@ -294,22 +320,43 @@ form label, form legend {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    padding: 15px 0;
+    width: 50%;
+    padding: 1rem 0;
     background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
     color: #ffffff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.2rem;
     border: none;
     border-radius: 15px; 
     transition: 1s all;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-top: 1rem;
 }
 
 .enviar:hover {
     background: #ff5858;
     transform: scale(1.2);
+}
+
+/* Mapa */
+#mapa {
+    background: #222;
+    color: #eee;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa-conteudo {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    height: 650px;
+    width: 550px;   
+}
+
+.paragrafo {
+    text-align: center;
 }
 
 /*Footer*/
@@ -368,7 +415,7 @@ form label, form legend {
     }
 
     .headline, #contato-titulo{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     .paragrafo {
@@ -463,25 +510,45 @@ form label, form legend {
        margin-top: 0;
     }
 
+    #estabelecimento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario{
+        width: 70%;
+    }
+
     form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        padding: 30px;
-        margin-top: 30px;
+        padding: 2rem;
+        margin-top: 1rem;
         justify-content: center;
         justify-items: center;
-        margin: auto;
     }
 
     .input-padrao{
-        width: 70%;
+        width: 100%;
     }
 
     .enviar {
-        width: 50%;
+        width: 100%;
         padding: 15px;
+    }
+
+    #mapa{
+        width: 100%;
+    }
+
+    .mapa-conteudo{
+        width: 100%;
+        height: 500px; 
+        margin: 1rem 0;
     }
 
     table {
