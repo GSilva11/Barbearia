@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Barbearia</title>
+    <title>Corte & Cia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,66 +12,68 @@
     <link rel="shortcut icon" href="icone/comb.png" type="image/x-icon">
 </head>
 <body>
-
     <nav id="navbar">
         <div id="navbar-container">
-            <h1 class="logo"><a href="#showcase">BarberShop</a></h1>
+            <h1 class="logo"><a href="#showcase">Corte & Cia</a></h1>
             <ul id="navbar-items">
                 <li><a href="#showcase">Inicio</a></li>
                 <li><a href="#principal">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#estabelecimento">Contato</a></li>
             </ul>
         </div>
     </nav>
-
     <header id="showcase">
         <div id="showcase-container">
-            <h2>O homem moderno</h2>
-            <p>também cuida da sua aparência e a nossa barbearia é o melhor lugar para fazer isso!</p>
-            <a href="#cortes" class="btn">Saiba mais</a>
+            <h2>Corte & Cia</h2>
+            <p>O Homem Moderno também cuida da sua aparência e a nossa barbearia é o melhor lugar para fazer isso!</p>
+            <a href="#projects" class="btn">Agendar um horário</a>
         </div>
     </header>
             
     <main>
         <section id="principal">
-            <p class="welcome">Bem vindos a</p>
-            <h3 class="headline">BarberShop</h3>
+            <p class="welcome">Bem vindos</p>            
+            <h3 class="headline">Corte & Cia</h3>
 
             <div class="paragrafo-sobre">
                 <p>Aqui é barba, cabelo e bigode! Venha dar aquele tapa no visual e tomar aquela cervejinha gelada conversando com os amigos.</p> 
                 <p id="missao">Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes".
                 </strong></p>
-                <p>Quem quer ser bem atendido e voltar para casa mais bonito sabe que a barbearia <strong>BarberShop</strong> é o melhor lugar!</p>
+                <p>Quem quer ser bem atendido e voltar para casa mais bonito sabe que a barbearia <strong>Corte & Cia</strong> é o melhor lugar!</p>
                 <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p> 
             </div>
         </section>
         
-
-        <section class="beneficios">
-            <h3 class="headline">beneficios</h3>
-
-            <div class="conteudo-beneficios">
-                <ul class="lista-beneficios">
-                    <li class="itens">Atendimento aos clientes com horario agendado</li>
-                    <li class="itens">Espaço diferenciado</li>
-                    <li class="itens">Profissionais qualificados</li>
-                    <li class="itens">Cortes de cabelo moderno e personalizado</li>
-                    <li class="itens">Conselhos profissionais</li>
-                    <li class="itens">Produtos de qualidade</li>
-                </ul>
-                <img class="imagem-beneficios" src="beneficios/beneficios.jpg" alt="beneficios">
-            </div>
-
+        <section class="container-profissionais">
+            <h3 class="headline">Profissionais</h3>
+            <section class="container-prof">
+                <div class="prof">
+                    <img class="perfil" src="profissionais/exem.jpg" alt="">
+                    <p>Igor</p>
+                </div>
+                <div class="prof">
+                    <img class="perfil" src="profissionais/exem.jpg" alt="">
+                    <p>Antonio</p>
+                </div>
+                <div class="prof">
+                    <img class="perfil" src="profissionais/exem.jpg" alt="">
+                    <p>Leonardo</p>
+                </div>
+                <div class="prof">
+                    <img class="perfil" src="profissionais/exem.jpg" alt="">
+                    <p>Thales</p>
+                </div>
+            </section>
         </section>
 
         <section id="projects">
-            <h2 class="headline">Nossos Serviços</h2>
+            <h3 class="headline">Nossos Serviços</h3>
             <div class="cards">
                 <section class="card-project">
                     <img class="card-project-img" src="imagens/cabelo-removebg-preview.png" alt="">
                     <h4>Cabelo</h4>
                     <p>Na tesoura ou máquina, como o cliente preferir.</p>
-                    <p class="preco">R$ 50,00</p>
+                    <p class="preco">R$ 30,00</p>
                     <a href=""><button class="btn-project">Agendar</button></a>
                 </section>
                 <section class="card-project">
@@ -92,105 +94,93 @@
                     <img class="card-project-img" src="imagens/cabelo-removebg-preview.png" alt="" >
                     <h4>Cabelo Kids (Até 12 anos)</h4>
                     <p>Na tesoura ou máquina, como o cliente preferir.</p>
-                    <p class="preco">R$ 25,00</p>
+                    <p class="preco">R$ 20,00</p>
                     <a href=""><button class="btn-project">Agendar</button></a>
                 </section>
             </div>
         </section>
 
+        <div class="container-galery">
+            <h3 class="headline">Galeria</h3>
+            <div class="box-img">
+                <div><img class="img one" src="imagens/img.jpg" alt=""></div>
+                <div><img class="img two" src="imagens/img1.jpg" alt=""></div>
+                <div><img class="img three" src="imagens/img2.jpg" alt=""></div>
+
+            </div>
+            <div class="box-img">
+                <div><img class="img four" src="imagens/img3.jpg" alt=""></div>
+                <div><img class="img five" src="imagens/img4.jpg" alt=""></div>
+                <div><img class="img six" src="imagens/agendar.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <h3 class="headline">Horário de funcionamento</h3>
+        <div class="detalhe">
+            <p class="linha"></p>
+            <img class="bigode" src="imagens/bigode.png" alt="">
+            <p class="linha right"></p>
+        </div>
+        <div class="container-agendamento">
+            <div class="box-hour ">
+                <p class="today">Segunda</p>
+                <p>6:00 - 18:30</p>
+            </div>
+            <div class="box-hour">
+                <p class="today">Terça</p>
+                <p>6:00 - 18:30</p>
+            </div>
+            <div class="box-hour">
+                <p class="today">Quarta</p>
+                <p>6:00 - 18:30</p>
+            </div>
+            <div class="box-hour ">
+                <p class="today">Quinta</p>
+                <p>6:00 - 18:30</p>
+            </div>
+            <div class="box-hour">
+                <p class="today">Sexta</p>
+                <p>6:00 - 18:30</p>
+            </div>
+            <div class="box-hour">
+                <p class="today">Sabado</p>
+                <p>6:00 - 12:00</p>
+            </div>
+        </div> 
+
+        <section id="estabelecimento">
+            <section class="container-contato">
+                <div class="imagens">
+                    <a href=""><img class="icon" src="icone/marcador.png" alt=""></a>
+                    <a href=""><img class="icon" src="icone/whatsapp.png" alt=""></a>
+                    <a href=""><img class="icon" src="icone/instagram.png" alt=""></a>
+                    <a href=""><img class="icon" src="icone/facebook.png" alt=""></a>
+                </div>
+                <div class="contato">
+                    <a class="cont" href=""><p>R. Floriano Peixoto, 652 - Centro, São Paulo - SP</p></a>
+                    <a class="cont" href=""><p>(XX) XXXXX - XXXX</p></a>
+                    <a class="cont" href=""><p>@Corte&Cia</p></a>
+                    <a class="cont" href=""><p>Corte&Cia</p></a>
+                </div>
+            </section>
+
+            <section id="mapa">
+                <div class="mapa-conteudo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36864.22869578193!2d-46.680586973131774!3d-23.554264149759902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d6a099b2ff%3A0x6f516e31e11bd821!2sBarbershop%20Niggaz!5e0!3m2!1spt-BR!2sbr!4v1674059401673!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </section>
+
     </main>
 
-    <section id="contato">
-        <div id="container-tit">
-            <p id="contato-titulo">Fale com a gente</p> 
-            <div class="paragrafo">
-                <p>Tel: (XX) XXXX-XXXX</p>
-                <p>Email: info@meusite.com</p>
-             </div>
-        </div>
-        <div id="container-tit">
-            <p id="contato-titulo">Nosso endereço</p>
-            <div class="paragrafo">
-                <p>Av. Bernardino de Campos 98</p>
-                <P>São Paulo - SP</P>
-             </div>
-        </div>
-        <div id="container-tit">
-           <p id="contato-titulo"> Horário de atendimento</p>
-           <table>
-            <thead>
-                <tr>
-                    <th>Dia</th>
-                    <th>Horário</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Segunda</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-            
-                <tr>
-                    <td>Quarta</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-                <tr>
-                    <td>Sexta</td>
-                    <td>8h ~ 20h</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-
-    </section>
-
-    <section id="estabelecimento">
-        <section class="formulario">
-            <h3 class="headline">Entre em contato</h3>
-                <form action="">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" class="input-padrao" required placeholder="Nome">
-        
-                    <label for="sobrenome">Sobrenome </label>
-                    <input type="text" id="sobrenome" class="input-padrao" required placeholder="Sobrenome">
-        
-                    <label for="email">Email </label>
-                    <input type="email" id="email" class="input-padrao" required placeholder="Email@dominio.com">
-        
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
-                    
-                    <label for="mensagem">Mensagem</label>
-                    <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required ></textarea>
-        
-                    <input type="submit" value="Enviar formulário" class="enviar">
-                </form>
-        </section>
-
-        <section id="mapa">
-            
-            <h3 class="headline">Nosso estabelecimento está localizado no coração da cidade.</h3>
-
-            <div class="mapa-conteudo">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4483278365396!2d-46.63466568562861!3d-23.588249068469487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0xab35da2f5ca62674!2sCaelum!5e0!3m2!1spt-BR!2sbr!4v1568814489656!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-
-        </section>
-
-    </section>
-
     <footer id="footer">
-        <p>Copyright 2022 - Todos os direitos reservados.</p>
-        <p>Feito por Gabriel Silva</p>
+        <p>Copyright © | Coded by Gabriel Silva</p>
     </footer>
 
     <script src="https://kit.fontawesome.com/036cb1cb31.js" crossorigin="anonymous"></script>
-
     <script
     src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
     crossorigin="anonymous"></script>
-
     <script src="js/main.js"></script>
-
 </body>
 </html>
