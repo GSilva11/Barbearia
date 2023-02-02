@@ -117,25 +117,6 @@ nav a {
     color: #888888;
 }
 
-.detalhe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bigode{
-    height: 42px;
-    width: 42px;
-}
-
-.linha{
-    border-bottom: #111 1px solid;
-    width: 100px;
-    justify-content: center;
-    margin: 1rem;
-}
-
-
 #principal {
     padding: 3em 0;
 	max-width: 940px;
@@ -160,7 +141,6 @@ strong {
 
 /* Profissionais */
 .container-profissionais {
-    /* background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%); */
     background: #222;
     color: #eee;
 }
@@ -264,21 +244,40 @@ a{
 .img{
     height: 250px;
     width: 250px;
-}
-
-.box-img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.img{
     margin: .5rem;
     border-radius: 5px;
     transition: 1s;
 }
 
+.box-img{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
 /* Agendamento */
+.detalhe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigode{
+    height: 42px;
+    width: 42px;
+}
+
+.linha{
+    border-bottom: #111 1px solid;
+    width: 100px;
+    justify-content: center;
+    margin: 1rem;
+}
+
 .container-agendamento {
     display: flex;
     justify-content: center;
@@ -307,7 +306,7 @@ a{
     margin-bottom: .5rem;
 }
 
-/* Formulario */
+/* Contato */
 #estabelecimento {
     display: flex;
     width: 100%;
@@ -428,6 +427,10 @@ a{
         border-right: 2px #fff solid;
     }
 
+    #navbar-items li:nth-child(3){
+        border-right: 2px #fff solid;
+    }
+
     #navbar-items{
         width: 100%;
         display: block;
@@ -444,7 +447,6 @@ a{
 
     #showcase-container p{
         width: 80%;
-        margin: auto;
     }
 
     #showcase-container{
@@ -459,78 +461,31 @@ a{
         margin: auto;
     }
 
-    .lista-beneficios{
-        width: auto;
-        margin: auto;
-        display: block;
-    }
-
-    .imagem-beneficios{
-        margin: auto;
-        width: 50%;
-        margin-bottom: 20px;
-    }
-
-    .itens:last-child {
-        margin-bottom: 15px;
-    }
-
-    .four, .five, .six{
-        /* display: none; */
-    }
-
-    /*Produtos*/
-    .imgp {
-        height: 150px;
-        margin: 0 auto;
+    .container-prof{
         display: flex;
-    }
-
-    #cortes ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
         justify-content: center;
-        align-items: center;
-    }
-
-    #cortes ul li{
-        display: flex;
-        flex-direction: column;
         text-align: center;
+    }
+    
+    .prof img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .box-img{
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
     }
 
-    #cortes {
-        padding-bottom: 15px;
+    .box-img img {
+        height: 200px;
+        width: 200px;
     }
 
-    .produtos{
-        width: 50%;
-        border: #222 1px solid;
-        border-radius: 10px;
-        margin: 15px;
-        padding: 15px;
-    }
-
-    .desc {
-        font-weight: bold;
-    }
-
-    .preco {
-        font-weight: bold;
-        color: #ed820e;
-        margin-bottom: 10px;
-    }
-
-    /*Contato*/
-    #contato {
-        display: block;
-    }
-
-    .info{
-       margin-top: 0;
+    .container-agendamento{
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
     }
 
     #estabelecimento {
@@ -585,7 +540,6 @@ a{
         text-align: center;
     }
     
-    
     .prof img{
         height: 100px;
         width: 100px;
@@ -614,14 +568,6 @@ a{
         margin-top: 1.6rem;
     }
 
-    .produtos{
-        width: 70%;
-        border: #222 1px solid;
-        border-radius: 10px;
-        margin: 15px;
-        padding: 15px;
-    }
-
     #navbar-items a{
         display: block;
         font-size: 1rem;
@@ -629,11 +575,6 @@ a{
 
     .headline {
         margin: 0 auto;
-    }
-
-    .enviar{
-        padding: 15px 25px;
-        width: auto;
     }
 
     #mapa {
@@ -649,14 +590,7 @@ a{
         width: 100%;
     }
 
-    .imgp {
-        height: 150px;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .paragrafo, #footer{
+    #footer{
         font-size: 0.8rem;
     }
-
 }
