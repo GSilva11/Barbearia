@@ -519,7 +519,7 @@ a{
     }    
 }
 
-@media screen and (max-width: 383px){
+@media screen and (max-width: 480px){
     #principal, .conteudo-beneficios{
 		width: auto;
         padding: 0 15px;
@@ -557,7 +557,7 @@ a{
     .container-agendamento{
         display: flex;
         margin: 1rem;
-        justify-content: start;
+        justify-content: center;
     }
 
     .logo, #contato-titulo, .headline {
