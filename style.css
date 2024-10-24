@@ -12,9 +12,9 @@ body {
 
 #navbar {
     width: 100%;
-    background: #111;
+    background: #111111;
     color: #eee;
-    height: 80px;
+    height: 60px;
     position: fixed;
     font-size: 1rem;
 }
@@ -60,28 +60,34 @@ nav a {
     justify-content: left;
     align-items: center;
     color: #eee;
-    background: url('banner/banner02.jpg') no-repeat center center/cover;
+    background: url('banner/banner02.webp') no-repeat center center/cover;
     /*Overlay*/
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
 }
 
 #showcase-container {
-    text-align: justify;
+    text-align: left;
 }
 
 #showcase-container h2 {
     font-size: 2.5rem;
     margin-left: 2rem;
+    color: #ed820e;
+    font-weight: bold;
 }
 
 #showcase-container p{
     font-size: 1.2rem;
-    width: 500px;
+    width: 450px;
     padding: 2px 0;
     margin-left: 2rem;
-    text-align: justify;
+    text-align: left;
 } 
+
+#showcase-container a {
+    text-transform: uppercase;
+}
 
 .btn {
     display: flex;
@@ -106,9 +112,14 @@ nav a {
     font-size: 1.6rem;
     text-transform: uppercase;
     text-align: center;
-    padding: 20px 0;
+    padding-top: 1rem;
     letter-spacing: 2px;
 }
+
+.orange{
+    color: #ed820e;
+}
+
 
 /* Principal */
 .welcome {
@@ -122,7 +133,7 @@ nav a {
 	max-width: 940px;
     width: 100%;
 	margin: 0 auto;
-    text-align: center;
+    text-align: left;
 }
 
 main {
@@ -267,8 +278,8 @@ a{
 }
 
 .bigode{
-    height: 42px;
-    width: 42px;
+    height: 64px;
+    width: 64px;
 }
 
 .linha{
