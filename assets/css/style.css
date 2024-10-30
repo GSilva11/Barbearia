@@ -60,7 +60,7 @@ nav a {
     justify-content: left;
     align-items: center;
     color: #eee;
-    background: url('banner/banner02n.webp') no-repeat center center/cover;
+    background: url('/assets/img/banner/banner02n.webp') no-repeat center center/cover;
     /*Overlay*/
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color;
