@@ -10,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#navbar {
+.navbar {
     width: 100%;
     background: #111111;
     color: #eee;
@@ -46,12 +46,34 @@ nav a {
     font-weight: bold;
     font-size: 1rem;
     text-decoration: none;
-    transition: 1s;
+    position: relative;
 }
 
-#navbar a:hover {
+.navbar a:hover {
     color: #ed820e;
+    transition: 1s ease-in-out;
 }
+
+/*Hamburguer*/
+.hamburguer {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #eee;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #eee;
+    margin-top: 5px;
+    position: relative;
+}
+
 
 /*Showcase*/
 #showcase{
@@ -159,7 +181,7 @@ strong {
 
 .container-prof{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;     
     justify-content: space-around;
     text-align: center;
 }
@@ -171,19 +193,22 @@ strong {
 .prof img{
     border-radius: 50%;
     height: 250px;
-    margin: 1rem;
+    /* margin: 1rem; */
     border: #ed820e 2px solid;
     padding: .1rem;
 }
 
 /*Serviços*/
 .cards{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     text-align: justify;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .card-project{
@@ -192,7 +217,7 @@ strong {
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 30px;
-    margin: 20px;
+    margin: 0.5rem;
     max-width: 270px;
     width: 100%;
     transition: all 0.3s ease-out;
@@ -403,6 +428,41 @@ a{
 }
 
 /* MOBILE */
+@media screen and (max-width: 1130px){
+    #estabelecimento {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+
+    .mapa-conteudo{
+        margin: 0;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-contato{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        justify-content: flex-start;
+
+    }
+    .container-contato img{
+        margin: 0.6rem;
+    }
+  
+    #mapa{
+        /* width: 100%; */
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     #principal, .conteudo-beneficios, .mapa-conteudo{
 		width: 100%;
@@ -413,7 +473,7 @@ a{
         margin-top: 1.2rem;
     }
 
-    #navbar {
+    .navbar {
         height: 130px;
         text-align: center;
     }
@@ -478,6 +538,7 @@ a{
         margin: auto;
     }
 
+
     .container-prof{
         display: flex;
         justify-content: center;
@@ -521,19 +582,122 @@ a{
         margin: 1rem 0;
     }
 
-    .contato{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        height: 270px;
-        width: 100%; 
-        margin: 0;
-    }
-
     .container-contato{
         width: 100%;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin: auto;
         height: 280px;
     }    
+
+    .imagens{
+        align-items: flex-end;
+        margin-right: 1rem;
+    }
+
+    .contato{
+        display: grid;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    #navbar-container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        justify-items: flex-end;
+        margin: 0;
+        width: 95%;
+    }
+
+    .logo {
+      margin: auto;
+      align-items: start;
+      justify-content: start;
+    
+    }
+
+    .navbar{
+        height: 70px;
+    }
+
+    .hamburguer{
+        display: block;
+        z-index: 1;
+    }
+
+    #navbar-items{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        clip-path: circle(100px at 90% -15%);
+        background: #111;
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    #navbar-items li:nth-child(2) {
+       border: none;
+    }
+
+    #navbar-items li:nth-child(3){
+        border: none;
+    }
+
+    #navbar-items a {
+        font-size: 1.5rem;
+        opacity: 0;
+    }
+
+    #navbar-items li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    #navbar-items li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    #navbar-items li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    #navbar-items li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+    }
+
+    .navbar.active #navbar-items a {
+        opacity: 1;
+    }
+
+    .navbar.active .hamburguer{
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .navbar.active .hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    .navbar.active .hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .navbar.active #navbar-items{
+        clip-path: circle(1500px);
+        pointer-events: all;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -603,7 +767,7 @@ a{
         padding-bottom: 15px;
     }
 
-    #navbar{
+    .navbar{
         width: 100%;
     }
 
