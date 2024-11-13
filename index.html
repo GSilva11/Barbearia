@@ -11,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="assets/img/icone/comb.png" type="image/x-icon">
-    <script defer src="assets/js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link defer href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script defer src="https://unpkg.com/scrollreveal"></script>
     <script defer src="https://kit.fontawesome.com/036cb1cb31.js" crossorigin="anonymous"></script>
+    <script defer src="assets/js/main.js"></script>
 </head>
 <body>
     <nav aria-label="Menu de navegação principal" class="navbar">
@@ -29,7 +30,7 @@
         </div>
     </nav>
     <header id="showcase">
-        <div id="showcase-container">
+        <div id="showcase-container" class="esconder">
             <h2>Corte & Cia</h2>
             <p>O Homem Moderno também cuida da sua aparência e a nossa barbearia é o melhor lugar para fazer isso!</p>
             <a href="#services"  aria-label="Agendar corte de cabelo" class="btn">Agende seu horário</a>
@@ -37,7 +38,7 @@
     </header>
             
     <main>
-        <section id="principal">
+        <section id="principal" class="esconder">
             <p class="welcome">Bem vindos</p>            
             <h3 class="headline orange">Corte & Cia</h3>
             <div class="detalhe">
@@ -54,22 +55,22 @@
             </div>
         </section>
         
-        <section class="container-profissionais">
+        <section class="container-profissionais" >
             <h3 class="headline">Profissionais</h3>
             <section class="container-prof">
-                <div class="prof">
+                <div class="prof esconder">
                     <img src="assets/img/profissional/exem.webp" alt="foto profissional">
                     <p>Igor</p>
                 </div>
-                <div class="prof">
+                <div class="prof esconder">
                     <img src="assets/img/profissional/exem.webp" alt="foto profissional">
                     <p>Antonio</p>
                 </div>
-                <div class="prof">
+                <div class="prof esconder">
                     <img src="assets/img/profissional/exem.webp" alt="foto profissional">
                     <p>Leonardo</p>
                 </div>
-                <div class="prof">
+                <div class="prof esconder">
                     <img src="assets/img/profissional/exem.webp" alt="foto profissional">
                     <p>Thales</p>
                 </div>
@@ -78,7 +79,7 @@
 
         <section id="services">
             <h3 class="headline">Nossos Serviços</h3>
-            <div class="cards">
+            <div class="cards esconder">
                 <section class="card-project">
                     <img class="card-project-img" src="assets/img/cortes/cabelo-removebg-preview.webp" alt="imagem corte cabelo">
                     <h4>Cabelo</h4>
@@ -128,7 +129,7 @@
             <img class="bigode" src="assets/img/cortes/bigode.webp" alt="">
             <p class="linha right"></p>
         </div>
-        <div class="container-agendamento">
+        <div class="container-agendamento esconder">
             <div class="box-hour ">
                 <p class="today">Segunda</p>
                 <p>6:00 - 18:30</p>
