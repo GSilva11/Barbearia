@@ -18,5 +18,4 @@ window.revelar = ScrollReveal({reset:true})
 
 revelar.reveal('.esconder',{
 	duration: 2000,
-	
 })
