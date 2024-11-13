@@ -471,8 +471,18 @@ a{
 @media screen and (max-width: 768px) {
     #principal, .conteudo-beneficios, .mapa-conteudo{
 		width: 100%;
-        padding: 0 15px;
+        /* padding: 0 15px; */
+        padding: 1.5rem;
 	}
+
+    .cards{
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .mapa-conteudo{
+        margin: 0;
+    }
 
     .logo {
         margin-top: 1.2rem;
@@ -737,8 +747,8 @@ a{
     }
 
     .box-img img {
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
 
     .container-agendamento{
