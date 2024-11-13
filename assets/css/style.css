@@ -212,8 +212,7 @@ strong {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     text-align: justify;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
     padding: 1rem;
 }
 
