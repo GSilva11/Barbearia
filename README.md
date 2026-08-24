@@ -105,14 +105,6 @@ Barbearia-main/
 └── README.md
 ```
 
-## 🗺 Roadmap
-
-- [ ] Substituir dados de contato (endereço, telefone, redes sociais) pelos dados reais
-- [ ] Adicionar fotos reais da equipe e do estabelecimento
-- [ ] Sistema de agendamento online integrado
-- [ ] Modo escuro/claro alternável
-- [ ] Deploy em produção (GitHub Pages / Vercel)
-
 ## 📄 Licença
 
 Este projeto está sob a licença **GPL-3.0**. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
